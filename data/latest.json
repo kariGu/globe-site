@@ -1,0 +1,1216 @@
+{
+  "contract": "quiet-atlas/edition@1",
+  "edition": {
+    "no": "016",
+    "date": "OCT 10",
+    "isoDate": "2026-10-10",
+    "asOf": "2026-10-10T14:04:38+00:00",
+    "headline": "Quiet Geopolitical Tape Puts Focus on Rates as 10-Year Yield Holds at 5.22%; S&P Closes at 7,811",
+    "threads": 3,
+    "note": "11 slice(s) carried forward."
+  },
+  "conflicts": [
+    {
+      "id": "a",
+      "label": "Eastern Front",
+      "theatre": "Ukraine – Russia",
+      "countries": [
+        "804",
+        "643",
+        "112"
+      ],
+      "intensity": 0.82,
+      "note": "Attritional front; energy infrastructure strikes resumed."
+    },
+    {
+      "id": "b",
+      "label": "Gulf–Levant Corridor",
+      "theatre": "Israel – Iran – Red Sea",
+      "countries": [
+        "376",
+        "364",
+        "887",
+        "818",
+        "275"
+      ],
+      "intensity": 0.64,
+      "note": "Shipping insurance repriced after strait transit warnings."
+    },
+    {
+      "id": "c",
+      "label": "Sahel Arc",
+      "theatre": "Sudan – Sahel belt",
+      "countries": [
+        "729",
+        "148",
+        "562",
+        "466"
+      ],
+      "intensity": 0.41,
+      "note": "Displacement pressure; gold corridor contested."
+    }
+  ],
+  "mapEvents": [
+    {
+      "id": "e1",
+      "name": "Kharkiv",
+      "lon": 36.23,
+      "lat": 49.99,
+      "conflict": "a",
+      "kind": "strike",
+      "note": "Grid substation hit; regional outages reported.",
+      "narratives": [
+        "n3"
+      ]
+    },
+    {
+      "id": "e2",
+      "name": "Odesa",
+      "lon": 30.73,
+      "lat": 46.48,
+      "conflict": "a",
+      "kind": "strike",
+      "note": "Port throughput down 38% week-on-week.",
+      "narratives": [
+        "n3"
+      ]
+    },
+    {
+      "id": "e6",
+      "name": "Bab el-Mandeb",
+      "lon": 43.42,
+      "lat": 12.58,
+      "conflict": "b",
+      "kind": "strike",
+      "note": "Convoy escort protocol expanded.",
+      "narratives": [
+        "n6"
+      ]
+    },
+    {
+      "id": "e8",
+      "name": "Washington",
+      "lon": -77.04,
+      "lat": 38.9,
+      "conflict": "a",
+      "kind": "policy",
+      "note": "Nhà đầu tư  thở phào  với giá vàng",
+      "narratives": [
+        "n1",
+        "n4"
+      ]
+    },
+    {
+      "id": "e3",
+      "name": "Moscow",
+      "lon": 37.62,
+      "lat": 55.75,
+      "conflict": "a",
+      "kind": "policy",
+      "note": "Ovo je ukrajinski odgovor na dogovor Trumpa i Putina",
+      "narratives": [
+        "n3"
+      ]
+    },
+    {
+      "id": "e4",
+      "name": "Hormuz",
+      "lon": 56.27,
+      "lat": 26.57,
+      "conflict": "b",
+      "kind": "market",
+      "note": "تصعيد على جبهات الشرق الأوسط : هجوم عسكري واسع ضد الحوثيين في اليمن .. وإيران تلوّح بحرب طويلة",
+      "narratives": [
+        "n2",
+        "n6"
+      ]
+    },
+    {
+      "id": "e5",
+      "name": "Tel Aviv",
+      "lon": 34.78,
+      "lat": 32.08,
+      "conflict": "b",
+      "kind": "policy",
+      "note": "2026年諾貝爾和平獎將於9日揭曉 - orz000 的部落格",
+      "narratives": [
+        "n6"
+      ]
+    }
+  ],
+  "mapRelations": [
+    {
+      "from": "e3",
+      "to": "e8",
+      "label": "sanctions channel"
+    },
+    {
+      "from": "e4",
+      "to": "e5",
+      "label": "insurance repricing"
+    }
+  ],
+  "commodities": [
+    {
+      "id": "brent",
+      "name": "Brent crude",
+      "unit": "$ / bbl",
+      "price": "87.42",
+      "change": "+2.1%",
+      "drift": "up",
+      "position": 0.79,
+      "driver": "war premium",
+      "mechanism": "strait risk → freight & insurance → Brent spot uplift",
+      "spark": [
+        0.42,
+        0.45,
+        0.44,
+        0.5,
+        0.57,
+        0.62,
+        0.7,
+        0.78,
+        0.85,
+        1
+      ]
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat (SRW)",
+      "unit": "¢ / bu",
+      "price": "612.50",
+      "change": "+0.8%",
+      "drift": "up",
+      "position": 0.58,
+      "driver": "grain corridor",
+      "mechanism": "Odesa throughput ↓ → export premium → wheat futures bid",
+      "spark": [
+        0.55,
+        0.5,
+        0.52,
+        0.47,
+        0.5,
+        0.56,
+        0.6,
+        0.58,
+        0.66,
+        0.7
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "unit": "$ / oz",
+      "price": "2,684.10",
+      "change": "+1.2%",
+      "drift": "up",
+      "position": 0.71,
+      "driver": "haven bid",
+      "mechanism": "real-rate drift + central-bank buying → haven allocation",
+      "spark": [
+        0.3,
+        0.36,
+        0.41,
+        0.4,
+        0.48,
+        0.55,
+        0.6,
+        0.66,
+        0.72,
+        0.78
+      ]
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "unit": "$ / t",
+      "price": "9,412.00",
+      "change": "−0.6%",
+      "drift": "down",
+      "position": 0.44,
+      "driver": "demand doubt",
+      "mechanism": "stimulus hesitation → inventory build → copper pressure",
+      "spark": [
+        0.72,
+        0.68,
+        0.7,
+        0.63,
+        0.58,
+        0.6,
+        0.52,
+        0.47,
+        0.45,
+        0.4
+      ]
+    },
+    {
+      "id": "natgas",
+      "name": "Nat gas",
+      "unit": "$ / MMBtu",
+      "price": "41.85",
+      "change": "+3.4%",
+      "drift": "up",
+      "position": 0.83,
+      "driver": "supply anxiety",
+      "mechanism": "storage draw + strike season → winter strip bid",
+      "spark": [
+        0.35,
+        0.4,
+        0.38,
+        0.5,
+        0.62,
+        0.58,
+        0.72,
+        0.8,
+        0.88,
+        0.95
+      ]
+    }
+  ],
+  "capitalDomains": [
+    {
+      "id": "usd",
+      "label": "USD / TREASURY",
+      "sub": "10Y yield · DXY",
+      "color": "var(--capital-usd)",
+      "position": 0.89,
+      "drift": "flat",
+      "reading": "5.22%",
+      "driver": "fiscal pressure",
+      "mechanism": "deficit supply → term premium → dollar bid"
+    },
+    {
+      "id": "cmdty",
+      "label": "COMMODITIES",
+      "sub": "Brent · wheat · gold",
+      "color": "var(--capital-cmdty)",
+      "position": 0.67,
+      "drift": "flat",
+      "reading": "+2.1σ",
+      "driver": "war premium",
+      "mechanism": "strait risk → freight & insurance → spot uplift"
+    },
+    {
+      "id": "crypto",
+      "label": "CRYPTO",
+      "sub": "BTC · stablecoin flows",
+      "color": "var(--capital-crypto)",
+      "position": 0.37,
+      "drift": "down",
+      "reading": "−1.4%",
+      "driver": "liquidity drain",
+      "mechanism": "Treasury issuance → reserve drain → risk shedding"
+    },
+    {
+      "id": "tech",
+      "label": "TECH EQUITIES",
+      "sub": "NDX · semis",
+      "color": "var(--capital-tech)",
+      "position": 0.55,
+      "drift": "flat",
+      "reading": "22,410",
+      "driver": "rate sensitivity",
+      "mechanism": "long duration → discount-rate watch"
+    }
+  ],
+  "people": [
+    {
+      "id": "p1",
+      "name": "J. POWELL",
+      "role": "Chair · Federal Reserve",
+      "mandate": "Price stability; maximum employment.",
+      "tension": "Cutting into a supply-shock inflation pulse while Treasury supply crowds the curve.",
+      "relations": [
+        {
+          "to": "p2",
+          "label": "coordination"
+        },
+        {
+          "to": "p4",
+          "label": "fiscal pressure"
+        }
+      ],
+      "events": [
+        "e8"
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "C. LAGARDE",
+      "role": "President · European Central Bank",
+      "mandate": "Euro-area price stability.",
+      "tension": "Energy pass-through from the Gulf corridor against a fragile industrial core.",
+      "relations": [
+        {
+          "to": "p1",
+          "label": "swap lines"
+        },
+        {
+          "to": "p3",
+          "label": "sanctions counsel"
+        }
+      ],
+      "events": [
+        "e4",
+        "e2"
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "O. SCHMIDT",
+      "role": "EU Sanctions Envoy",
+      "mandate": "Maintain coalition enforcement unity.",
+      "tension": "Secondary-sanction leakage through re-export hubs; member-state fatigue.",
+      "relations": [
+        {
+          "to": "p4",
+          "label": "enforcement gap"
+        }
+      ],
+      "events": [
+        "e3",
+        "e8"
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "S. ALDRIDGE",
+      "role": "Treasury Secretary · U.S.",
+      "mandate": "Fund the state; protect dollar primacy.",
+      "tension": "Bill-heavy issuance strains dealer balance sheets; allies seek exemptions.",
+      "relations": [
+        {
+          "to": "p1",
+          "label": "issuance ↔ rates"
+        }
+      ],
+      "events": [
+        "e8",
+        "e5"
+      ]
+    }
+  ],
+  "eventBooks": [
+    {
+      "id": "all",
+      "label": "All recorded events",
+      "note": "Every event in the current edition, regardless of theatre.",
+      "opened": "SEP 08",
+      "events": [
+        {
+          "id": "u1",
+          "date": "SEP 08",
+          "conflict": "a",
+          "title": "Odesa port strike",
+          "weight": 2
+        },
+        {
+          "id": "f1",
+          "date": "SEP 11",
+          "conflict": "capital",
+          "title": "UST 10Y auction tails",
+          "weight": 1
+        },
+        {
+          "id": "g1",
+          "date": "SEP 14",
+          "conflict": "b",
+          "title": "Hormuz transit warning",
+          "weight": 3
+        },
+        {
+          "id": "u2",
+          "date": "SEP 15",
+          "conflict": "a",
+          "title": "Moscow export settlement rules",
+          "weight": 1
+        },
+        {
+          "id": "f2",
+          "date": "SEP 17",
+          "conflict": "capital",
+          "title": "FOMC holds; hawkish dot shift",
+          "weight": 2
+        },
+        {
+          "id": "g2",
+          "date": "SEP 19",
+          "conflict": "b",
+          "title": "Escort protocol expanded",
+          "weight": 1
+        },
+        {
+          "id": "s1",
+          "date": "SEP 21",
+          "conflict": "c",
+          "title": "Port Sudan talks stall",
+          "weight": 2
+        },
+        {
+          "id": "f3",
+          "date": "SEP 24",
+          "conflict": "capital",
+          "title": "Buyback guidance hinted",
+          "weight": 1
+        },
+        {
+          "id": "g3",
+          "date": "SEP 24",
+          "conflict": "b",
+          "title": "War-risk premium repriced",
+          "weight": 2
+        },
+        {
+          "id": "s2",
+          "date": "SEP 25",
+          "conflict": "c",
+          "title": "Aid corridor escort proposed",
+          "weight": 1
+        },
+        {
+          "id": "u3",
+          "date": "SEP 27",
+          "conflict": "a",
+          "title": "Grid strikes — Kharkiv",
+          "weight": 2
+        },
+        {
+          "id": "s3",
+          "date": "SEP 29",
+          "conflict": "c",
+          "title": "Gold corridor skirmish reported",
+          "weight": 1
+        },
+        {
+          "id": "f4",
+          "date": "SEP 30",
+          "conflict": "capital",
+          "title": "Term premium thread updated",
+          "weight": 1
+        },
+        {
+          "id": "g4",
+          "date": "SEP 30",
+          "conflict": "b",
+          "title": "Brent settles above band",
+          "weight": 1
+        },
+        {
+          "id": "u4",
+          "date": "OCT 01",
+          "conflict": "a",
+          "title": "Supplemental enters committee",
+          "weight": 1
+        },
+        {
+          "id": "x1010x",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "a",
+          "title": "《 國際經濟 》 傳歐盟批准俄羅斯制裁 集中在彈道飛彈供應商 - 財經",
+          "weight": 1
+        },
+        {
+          "id": "x10104",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "a",
+          "title": "СБУ та Нацполіція заблокували ще 4 « схеми для ухилянтів » | Новости кримінала в Харькове , Украине . Весь Харьков",
+          "weight": 1
+        },
+        {
+          "id": "x1010fxwirepro-",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "FxWirePro : EUR / NZD recovers from early dip , upside pressure builds",
+          "weight": 1
+        },
+        {
+          "id": "x1010nha-au-tu-",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "Nhà đầu tư  thở phào  với giá vàng",
+          "weight": 1
+        },
+        {
+          "id": "x1010uk-savings",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "UK savings : 5 % interest rate deals may not last , say experts",
+          "weight": 1
+        },
+        {
+          "id": "x1010brent-comm",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "b",
+          "title": "Brent commands a war premium as Middle East supply risks keep oil on edge",
+          "weight": 1
+        },
+        {
+          "id": "x1010trump-and-",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "b",
+          "title": "Trump and Iran agree on one thing . The US election calendar isnt driving their decisions on the war",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "eastern-front",
+      "label": "Eastern Front War",
+      "note": "The attritional war and its fiscal channels into Western budgets.",
+      "opened": "SEP 08",
+      "events": [
+        {
+          "id": "u1",
+          "date": "SEP 08",
+          "conflict": "a",
+          "title": "Odesa port strike",
+          "weight": 2
+        },
+        {
+          "id": "u2",
+          "date": "SEP 15",
+          "conflict": "a",
+          "title": "Moscow export settlement rules",
+          "weight": 1
+        },
+        {
+          "id": "u3",
+          "date": "SEP 27",
+          "conflict": "a",
+          "title": "Grid strikes — Kharkiv",
+          "weight": 2
+        },
+        {
+          "id": "u4",
+          "date": "OCT 01",
+          "conflict": "a",
+          "title": "Supplemental enters committee",
+          "weight": 1
+        },
+        {
+          "id": "x1010x",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "a",
+          "title": "《 國際經濟 》 傳歐盟批准俄羅斯制裁 集中在彈道飛彈供應商 - 財經",
+          "weight": 1
+        },
+        {
+          "id": "x10104",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "a",
+          "title": "СБУ та Нацполіція заблокували ще 4 « схеми для ухилянтів » | Новости кримінала в Харькове , Украине . Весь Харьков",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "fed-watch",
+      "label": "Federal Reserve Watch",
+      "note": "Rates, issuance and the term-premium thread.",
+      "opened": "SEP 11",
+      "events": [
+        {
+          "id": "f1",
+          "date": "SEP 11",
+          "conflict": "capital",
+          "title": "UST 10Y auction tails",
+          "weight": 1
+        },
+        {
+          "id": "f2",
+          "date": "SEP 17",
+          "conflict": "capital",
+          "title": "FOMC holds; hawkish dot shift",
+          "weight": 2
+        },
+        {
+          "id": "f3",
+          "date": "SEP 24",
+          "conflict": "capital",
+          "title": "Buyback guidance hinted",
+          "weight": 1
+        },
+        {
+          "id": "f4",
+          "date": "SEP 30",
+          "conflict": "capital",
+          "title": "Term premium thread updated",
+          "weight": 1
+        },
+        {
+          "id": "x1010fxwirepro-",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "FxWirePro : EUR / NZD recovers from early dip , upside pressure builds",
+          "weight": 1
+        },
+        {
+          "id": "x1010nha-au-tu-",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "Nhà đầu tư  thở phào  với giá vàng",
+          "weight": 1
+        },
+        {
+          "id": "x1010uk-savings",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "UK savings : 5 % interest rate deals may not last , say experts",
+          "weight": 1
+        },
+        {
+          "id": "x1010x",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "capital",
+          "title": "Τι ομόλογα έχουν οι τράπεζες στα χαρτοφυλάκιά τους – Η έκθεση στα γαλλικά ...",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "gulf-shipping",
+      "label": "Gulf & Red Sea Shipping",
+      "note": "Straits, convoys and the insurance repricing chain.",
+      "opened": "SEP 14",
+      "events": [
+        {
+          "id": "g1",
+          "date": "SEP 14",
+          "conflict": "b",
+          "title": "Hormuz transit warning",
+          "weight": 3
+        },
+        {
+          "id": "g2",
+          "date": "SEP 19",
+          "conflict": "b",
+          "title": "Escort protocol expanded",
+          "weight": 1
+        },
+        {
+          "id": "g3",
+          "date": "SEP 24",
+          "conflict": "b",
+          "title": "War-risk premium repriced",
+          "weight": 2
+        },
+        {
+          "id": "g4",
+          "date": "SEP 30",
+          "conflict": "b",
+          "title": "Brent settles above band",
+          "weight": 1
+        },
+        {
+          "id": "x1010brent-comm",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "b",
+          "title": "Brent commands a war premium as Middle East supply risks keep oil on edge",
+          "weight": 1
+        },
+        {
+          "id": "x1010trump-and-",
+          "date": "OCT 10",
+          "isoDate": "2026-10-10",
+          "conflict": "b",
+          "title": "Trump and Iran agree on one thing . The US election calendar isnt driving their decisions on the war",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "sahel-arc",
+      "label": "Sahel Arc Monitor",
+      "note": "Displacement, aid corridors and the contested gold route.",
+      "opened": "SEP 21",
+      "events": [
+        {
+          "id": "s1",
+          "date": "SEP 21",
+          "conflict": "c",
+          "title": "Port Sudan talks stall",
+          "weight": 2
+        },
+        {
+          "id": "s2",
+          "date": "SEP 25",
+          "conflict": "c",
+          "title": "Aid corridor escort proposed",
+          "weight": 1
+        },
+        {
+          "id": "s3",
+          "date": "SEP 29",
+          "conflict": "c",
+          "title": "Gold corridor skirmish reported",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "narratives": [
+    {
+      "id": "n1",
+      "theme": "Term premium is the real story of the quarter",
+      "outlets": [
+        "FT",
+        "Bloomberg",
+        "WSJ"
+      ],
+      "theatre": "capital",
+      "prominence": 0.84,
+      "storyline": "fed-watch",
+      "figures": [
+        {
+          "id": "p1",
+          "stance": "aligned"
+        },
+        {
+          "id": "p2",
+          "stance": "aligned"
+        },
+        {
+          "id": "p3",
+          "stance": "aligned"
+        },
+        {
+          "id": "p4",
+          "stance": "aligned"
+        }
+      ],
+      "places": [
+        "e8"
+      ],
+      "confidence": 0.0,
+      "confidenceNote": "EVIDENCE array is empty (0 articles in the last 72h) — no outlets, primary material, or dated claims to score, so no rubric points can be awarded and there are no URLs to rely on.",
+      "drift": "steady",
+      "firstSeen": "SEP 09",
+      "frame": "No frame can be determined: with zero articles in evidence, no editorial angle on 'term premium' is observable or attributable to any outlet."
+    },
+    {
+      "id": "n2",
+      "theme": "The strait premium returns to oil",
+      "outlets": [
+        "Reuters",
+        "FT",
+        "Argus"
+      ],
+      "theatre": "b",
+      "prominence": 0.77,
+      "storyline": "gulf-shipping",
+      "figures": [
+        {
+          "id": "p1",
+          "stance": "opposed"
+        },
+        {
+          "id": "p2",
+          "stance": "opposed"
+        },
+        {
+          "id": "p3",
+          "stance": "opposed"
+        },
+        {
+          "id": "p4",
+          "stance": "aligned"
+        }
+      ],
+      "places": [
+        "e4"
+      ],
+      "confidence": 0.9,
+      "confidenceNote": "War-premium/Hormuz-export line carried independently by Economic Times, Middle East Eye and Business Standard (not wire copies); MEE cites a published export-tracking report and Brent pricing is a public data series; the claim is dated and falsifiable and the outlets have clean records on this beat — though several returned items (Nobel, gold, US local gas) are off-theme noise.",
+      "drift": "steady",
+      "firstSeen": "SEP 14",
+      "frame": "Gulf escalation framed as an oil-market story: a returning war premium on Brent as increased vessel attacks drive Hormuz exports sharply lower, with Trump's still-undecided Iran-strike call as the swing factor."
+    },
+    {
+      "id": "n3",
+      "theme": "Grid warfare as economic strategy",
+      "outlets": [
+        "Economist",
+        "FT"
+      ],
+      "theatre": "a",
+      "prominence": 0.58,
+      "storyline": "eastern-front",
+      "figures": [
+        {
+          "id": "p1",
+          "stance": "aligned"
+        },
+        {
+          "id": "p2",
+          "stance": "aligned"
+        },
+        {
+          "id": "p3",
+          "stance": "aligned"
+        },
+        {
+          "id": "p4",
+          "stance": "aligned"
+        }
+      ],
+      "places": [
+        "e1",
+        "e2",
+        "e3"
+      ],
+      "confidence": 0.0,
+      "confidenceNote": "Empty evidence array — no outlets, primary material, or dated claims to score; figure stances default to non-opposed for lack of any coverage.",
+      "drift": "steady",
+      "firstSeen": "SEP 08",
+      "frame": "Ukraine grid-warfare narrative framed as an unsupported watch — zero articles captured in the 72h window, so no editorial angle can be evidenced."
+    },
+    {
+      "id": "n4",
+      "theme": "Stablecoins as shadow eurodollars",
+      "outlets": [
+        "Bloomberg",
+        "CoinDesk"
+      ],
+      "theatre": "capital",
+      "prominence": 0.41,
+      "storyline": "fed-watch",
+      "figures": [
+        {
+          "id": "p1",
+          "stance": "opposed"
+        }
+      ],
+      "places": [
+        "e8"
+      ],
+      "confidence": 0.0,
+      "confidenceNote": "Evidence list is empty — no outlets, primary material, or dated claims to score, so no rubric points or penalties apply; confidence is 0.0 and figure stances are indeterminate (figures array left empty rather than fabricated).",
+      "drift": "steady",
+      "firstSeen": "AUG 28",
+      "frame": "No editorial frame assignable — the 72-hour evidence packet contains zero articles, so no angle ('X framed as Y') can be traced to any source."
+    },
+    {
+      "id": "n5",
+      "theme": "A forgotten corridor in the Sahel",
+      "outlets": [
+        "AFP",
+        "Al Jazeera"
+      ],
+      "theatre": "c",
+      "prominence": 0.9,
+      "storyline": "sahel-arc",
+      "figures": [
+        {
+          "id": "p1",
+          "stance": "aligned"
+        },
+        {
+          "id": "p2",
+          "stance": "aligned"
+        },
+        {
+          "id": "p3",
+          "stance": "aligned"
+        },
+        {
+          "id": "p4",
+          "stance": "opposed"
+        }
+      ],
+      "places": [
+        "e1"
+      ],
+      "confidence": 0.0,
+      "confidenceNote": "Rubric arithmetic yields zero: the +0.30 two-independent-outlets test fails (only developingtelecoms.com is in-theatre, and it is a telecom story), no primary material is cited, and no dated falsifiable central claim exists; the draft's residual 0.1 had no rubric basis, so it is removed.",
+      "drift": "rising",
+      "firstSeen": "SEP 21",
+      "frame": "With no aid, gold or displacement reporting in the window, the only in-theatre item frames Niger as a beneficiary of expanded connectivity via a fixed-network link to Algeria — a connectivity story, not a corridor-in-crisis story."
+    },
+    {
+      "id": "n6",
+      "theme": "Rerouting becomes the baseline, not the exception",
+      "outlets": [
+        "Lloyd's List",
+        "Reuters"
+      ],
+      "theatre": "b",
+      "prominence": 0.63,
+      "storyline": "gulf-shipping",
+      "figures": [
+        {
+          "id": "p1",
+          "stance": "opposed"
+        },
+        {
+          "id": "p2",
+          "stance": "opposed"
+        },
+        {
+          "id": "p3",
+          "stance": "opposed"
+        },
+        {
+          "id": "p4",
+          "stance": "opposed"
+        }
+      ],
+      "places": [
+        "e4"
+      ],
+      "confidence": 0.0,
+      "confidenceNote": "Evidence set is empty — no outlets, primary material, or dated falsifiable claims to score, so no rubric credit can be awarded and no penalty verified; floored at 0.0.",
+      "drift": "steady",
+      "firstSeen": "SEP 19",
+      "frame": "No coverage to frame — the evidence window contains zero articles, so the 'Cape rerouting as permanent baseline' angle cannot be attributed to any outlet or assessed as an editorial line."
+    }
+  ],
+  "archive": [
+    {
+      "no": "016",
+      "date": "OCT 10",
+      "isoDate": "2026-10-10",
+      "headline": "Quiet Geopolitical Tape Puts Focus on Rates as 10-Year Yield Holds at 5.22%; S&P Closes at 7,811",
+      "threads": 3,
+      "note": "11 slice(s) carried forward.",
+      "snapshot": {
+        "mapEvents": [
+          "e1",
+          "e2",
+          "e6",
+          "e8",
+          "e3",
+          "e4",
+          "e5"
+        ],
+        "spectrum": {
+          "usd": 0.89,
+          "cmdty": 0.67,
+          "crypto": 0.37,
+          "tech": 0.55
+        }
+      }
+    },
+    {
+      "no": "015",
+      "date": "OCT 10",
+      "isoDate": "2026-10-10",
+      "headline": "Supplemental enters committee",
+      "threads": 1,
+      "note": "Desk offline — judgments carried forward. 12 slice(s) carried forward.",
+      "snapshot": {
+        "mapEvents": [
+          "e1",
+          "e2",
+          "e6",
+          "e8",
+          "e3",
+          "e4",
+          "e5"
+        ],
+        "spectrum": {
+          "usd": 0.89,
+          "cmdty": 0.67,
+          "crypto": 0.37,
+          "tech": 0.55
+        }
+      }
+    },
+    {
+      "no": "014",
+      "date": "OCT 01",
+      "headline": "Supplemental enters committee",
+      "threads": 3,
+      "note": "Current edition.",
+      "snapshot": {
+        "mapEvents": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "spectrum": {
+          "usd": 0.68,
+          "cmdty": 0.79,
+          "crypto": 0.37,
+          "tech": 0.55
+        }
+      }
+    },
+    {
+      "no": "013",
+      "date": "SEP 30",
+      "headline": "Brent settles above band",
+      "threads": 2,
+      "note": "Energy desk note attached.",
+      "snapshot": {
+        "mapEvents": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "spectrum": {
+          "usd": 0.66,
+          "cmdty": 0.76,
+          "crypto": 0.39,
+          "tech": 0.54
+        }
+      }
+    },
+    {
+      "no": "012",
+      "date": "SEP 27",
+      "headline": "Grid strikes — Kharkiv",
+      "threads": 4,
+      "note": "Infrastructure mapping updated.",
+      "snapshot": {
+        "mapEvents": [
+          "e1",
+          "e2",
+          "e4",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "spectrum": {
+          "usd": 0.62,
+          "cmdty": 0.7,
+          "crypto": 0.42,
+          "tech": 0.52
+        }
+      }
+    },
+    {
+      "no": "011",
+      "date": "SEP 24",
+      "headline": "War-risk premium repriced",
+      "threads": 3,
+      "note": "Insurance series revised.",
+      "snapshot": {
+        "mapEvents": [
+          "e2",
+          "e4",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "spectrum": {
+          "usd": 0.6,
+          "cmdty": 0.72,
+          "crypto": 0.44,
+          "tech": 0.51
+        }
+      }
+    },
+    {
+      "no": "010",
+      "date": "SEP 21",
+      "headline": "Port Sudan talks stall",
+      "threads": 2,
+      "note": "Corridor monitor added.",
+      "snapshot": {
+        "mapEvents": [
+          "e2",
+          "e4",
+          "e7",
+          "e8"
+        ],
+        "spectrum": {
+          "usd": 0.58,
+          "cmdty": 0.66,
+          "crypto": 0.45,
+          "tech": 0.5
+        }
+      }
+    },
+    {
+      "no": "009",
+      "date": "SEP 17",
+      "headline": "FOMC holds; dot shift",
+      "threads": 5,
+      "note": "Spectrum re-baselined.",
+      "snapshot": {
+        "mapEvents": [
+          "e2",
+          "e4",
+          "e8"
+        ],
+        "spectrum": {
+          "usd": 0.61,
+          "cmdty": 0.6,
+          "crypto": 0.48,
+          "tech": 0.49
+        }
+      }
+    },
+    {
+      "no": "008",
+      "date": "SEP 14",
+      "headline": "Hormuz transit warning",
+      "threads": 4,
+      "note": "Strait watch opened.",
+      "snapshot": {
+        "mapEvents": [
+          "e2",
+          "e4"
+        ],
+        "spectrum": {
+          "usd": 0.55,
+          "cmdty": 0.63,
+          "crypto": 0.5,
+          "tech": 0.47
+        }
+      }
+    },
+    {
+      "no": "007",
+      "date": "SEP 11",
+      "headline": "UST 10Y auction tails",
+      "threads": 2,
+      "note": "Term premium thread opened.",
+      "snapshot": {
+        "mapEvents": [
+          "e2"
+        ],
+        "spectrum": {
+          "usd": 0.52,
+          "cmdty": 0.55,
+          "crypto": 0.53,
+          "tech": 0.46
+        }
+      }
+    }
+  ],
+  "i18nZh": {
+    "Quiet Geopolitical Tape Puts Focus on Rates as 10-Year Yield Holds at 5.22%; S&P Closes at 7,811": "地缘政治面无新热点，市场焦点转向利率，10年期美债收益率持于5.22%，标普500收于7811点",
+    "Ovo je ukrajinski odgovor na dogovor Trumpa i Putina": "这是乌克兰对特朗普与普京协议的回应",
+    "تصعيد على جبهات الشرق الأوسط : هجوم عسكري واسع ضد الحوثيين في اليمن .. وإيران تلوّح بحرب طويلة": "中东多条战线局势升级：对也门胡塞武装发动大规模军事打击……伊朗扬言打持久战",
+    "《 國際經濟 》 傳歐盟批准俄羅斯制裁 集中在彈道飛彈供應商 - 財經": "《国际经济》传欧盟批准对俄制裁 重点针对弹道导弹供应商 - 财经",
+    "СБУ та Нацполіція заблокували ще 4 « схеми для ухилянтів » | Новости кримінала в Харькове , Украине . Весь Харьков": "乌克兰安全局与国家警察又捣毁4个“逃兵役者”渠道 | 乌克兰哈尔科夫犯罪新闻。哈尔科夫全览",
+    "UK savings : 5 % interest rate deals may not last , say experts": "英国储蓄：专家称5%利率产品可能不会持久",
+    "Τι ομόλογα έχουν οι τράπεζες στα χαρτοφυλάκιά τους – Η έκθεση στα γαλλικά ...": "各银行投资组合中持有哪些债券——这份法语报告……",
+    "Brent commands a war premium as Middle East supply risks keep oil on edge": "中东供应风险令油市持续紧张，布伦特原油带有战争溢价",
+    "Trump and Iran agree on one thing . The US election calendar isnt driving their decisions on the war": "特朗普与伊朗在一件事上意见一致：美国大选日程并未左右双方对这场战争的决策"
+  }
+}
